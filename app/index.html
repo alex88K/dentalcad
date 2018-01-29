@@ -1,63 +1,178 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-
-	<meta charset="utf-8">
-
-	<title>SmartLIFT</title>
-	<meta name="description" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-
-</head>
+//= html_includes/_head.html
 
 <body class="ishome">
 	<div class="wrapper">
-		<header class="main-header" style="background-image: url(img/bg-top.jpg)";>
-			<div class="top-line">
-				<div class="container">
-					<div class="contact-b fleft">
-						<span class="contact-b-item">Мытищи, ул. Воровского, д.1В</span>
-						<span class="contact-b-item">Пн-Пт с 9:00 до 18:00</span>
-					</div>
-					<div class="contact-b fright">
-						<a class="contact-b-item" href="mailto:mail@tkeks.ru">mail@tkeks.ru</a>
-						<a class="contact-b-item" href="tel:+74955825999">+7 (495) 582-59-99</a>
-						<button class="contact-b-item modal-btn">обратный звонок</button>
-					</div>
-				</div>
-			</div>
-		</header>
+
+		//= html_includes/_header.html
 
 		<main class="main">
-			
+
+			<section class="promo">
+				<div class="promo-video">	
+					<div class="container">
+						<div class="promo-text">
+							<div class="sticker">Акция</div>
+							<div class="h1">скидки на установку брекет-систем</div>
+							<p>В течении всего апреля для вас дейтсвует скидка 10% на установку любых брекет-систем. Работа проводится ортодонтом, со стажем работы более 10 лет. Красивая улыбка изменит вашу жизнь!</p>
+							<a href="/" class="btn btn-gr btn-more">Подробнее<i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+					
+					<video poster="pic/top-slider/slide-1.jpg" autoplay loop id="video-background" muted>
+					  <source src="img/bg-video.mp4" type="video/mp4">
+					</video>
+				</div>
+			</section>
+
+			<section class="best-offers section-b">
+				<div class="container">
+					<header class="section-header">
+						<div class="section-title">Лучшие товары</div>
+					</header>
+					<div class="section-content">
+						<div class="best-offers-slider">
+							<div class="best-slide">
+								<div class="row">
+									<div class="col-lg-6 col-md-6">
+										<div class="best-slide-img">
+											<img src="pic/best-offers/b-1.png" alt="Станок Roland DWX-4W">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<div class="best-slide-info">
+											<div class="best-slide-title">Станок Roland DWX-4W</div>
+											<div class="best-slide-desc">Современный и эффективный компактный фрезерный станок способен выполнять обработку таких стоматологических конструкций в полностью автоматическом режиме за 60 000 рублей</div>
+											<div class="btn-group">
+												<a href="/" class="btn">Подробнее<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+												<a href="/" class="btn btn-t">Оформить заявку<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="best-slide">
+								<div class="row">
+									<div class="col-lg-6 col-md-6">
+										<div class="best-slide-img">
+											<img src="pic/best-offers/b-1.png" alt="Станок Roland DWX-4W">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<div class="best-slide-info">
+											<div class="best-slide-title">Станок Roland DWX-4W</div>
+											<div class="best-slide-desc">Современный и эффективный компактный фрезерный станок способен выпоических конструкций в полностью автоматическом режиме за 60 000 рублей</div>
+											<div class="btn-group">
+												<a href="/" class="btn">Подробнее</a>
+												<a href="/" class="btn btn-t">Оформить заявку</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="services section-b">
+				<div class="container">
+					<header class="section-header">
+						<div class="section-title">Наши услуги</div>
+					</header>
+				</div>
+				<div class="section-content">
+					<div class="services-slider">
+						<div class="services-slide">
+							<a href="/" class="services-slide-wrap">
+								<div class="services-slide-bg" style="background-image: url(img/services/s0.jpg)"></div>
+								<div class="services-slide-text">Изделия из золотосодержащих сплавов</div>
+							</a>
+						</div>
+						<div class="services-slide">
+							<a href="/" class="services-slide-wrap">
+								<div class="services-slide-bg" style="background-image: url(img/services/s1.jpg)"></div>
+								<div class="services-slide-text">Дополнительные услуги</div>
+							</a>
+						</div>
+						<div class="services-slide">
+							<a href="/" class="services-slide-wrap">
+								<div class="services-slide-bg" style="background-image: url(img/services/s2.jpg)"></div>
+								<div class="services-slide-text">МЕТАЛЛОКЕРАМИКА, МЕТАЛЛОКОМПОЗИТ (ЦЕМЕНТНАЯ ФИКСАЦИЯ)</div>
+							</a>
+						</div>
+						<div class="services-slide">
+							<a href="/" class="services-slide-wrap">
+								<div class="services-slide-bg" style="background-image: url(img/services/s3.jpg)"></div>
+								<div class="services-slide-text">МЕТАЛЛОКЕРАМИКА, МЕТАЛЛОКОМПОЗИТ (винтовая ФИКСАЦИЯ)</div>
+							</a>
+						</div>
+						<div class="services-slide">
+							<a href="/" class="services-slide-wrap">
+								<div class="services-slide-bg" style="background-image: url(img/services/s4.jpg)"></div>
+								<div class="services-slide-text">Культевые вкладки</div>
+							</a>
+						</div>
+						<div class="services-slide">
+							<a href="/" class="services-slide-wrap">
+								<div class="services-slide-bg" style="background-image: url(img/services/s0.jpg)"></div>
+								<div class="services-slide-text">Изделия из золотосодержащих сплавов</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="container">
+					<header class="section-header">
+						<div class="section-title">О компании</div>
+					</header>
+					<div class="section-content">
+						<div class="row">
+							<div class="col-lg-8 col-md-8">
+								<p><b>Компания «ДенталКадКам» существует на рынке более 5 лет и является официальным дистрибьютором производителей EasyShape, Roland, DOF, Bloomden в Казахстане.</b></p>
+								<p>Компания «ДенталКадКам» существует на рынке более 5 лет и является официальным дистрибьютором производителей EasyShape, Roland, DOF, Bloomden в Казахстане.</p>
+								<p>С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. С другой стороны сложившаяся структура организации позволяет выполнять важные задания по разработке соответствующий условий активизации. Таким образом рамки и место обучения кадров играет важную роль в формировании модели развития.</p>
+							</div>
+							<div class="col-lg-4 col-md-4">
+								<div class="partners">
+									<div class="partners-title">Наши партнеры</div>
+									<div class="partners-slider">
+										<div class="partners-slide">
+											<div class="img-b">
+												<div class="img-wrap">
+													<img src="img/partners/p-1.png" alt="easy shape">
+												</div>
+												<div class="img-wrap">
+													<img src="img/partners/p-2.png" alt="degree of freedom">
+												</div>
+												<div class="img-wrap">
+													<img src="img/partners/p-3.png" alt="bloomden">
+												</div>
+											</div>
+										</div>
+										<div class="partners-slide">
+											<div class="img-b">
+												<div class="img-wrap">
+													<img src="img/partners/p-1.png" alt="easy shape">
+												</div>
+												<div class="img-wrap">
+													<img src="img/partners/p-2.png" alt="degree of freedom">
+												</div>
+												<div class="img-wrap">
+													<img src="img/partners/p-3.png" alt="bloomden">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 		</main>
 		
-		<footer class="main-footer">
-			
-		</footer>
-	</div>
-	
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
-
-</body>
-</html>
+//= html_includes/_footer.html

@@ -31,7 +31,7 @@ var path = {
 	},
 	src: {
 		html: 'app/**/*.html',
-		js: 'app/js/scripts.min.js',	//only 'main' files
+		js: 'app/js/scripts.min.js',	
 		style: 'app/sass/main.sass',
 		img: 'app/img/**/*.*',
 		pic: 'app/pic/**/*.*',
@@ -81,11 +81,12 @@ gulp.task('js:build', function() {
 		'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
 		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/libs/maskedInput/maskedInput.min.js',
+		'node_modules/scroll-parallax/dist/Parallax.min.js',
 		'app/libs/slick/slick.js',
 		'app/js/common.js',
 		])
 	.pipe(concat('scripts.min.js'))
-	// .pipe(uglify()) // Минимизировать весь js (на выбор)
+	.pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest(path.build.js))
 	.pipe(reload({stream: true}));
 });
